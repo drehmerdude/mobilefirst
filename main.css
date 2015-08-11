@@ -1,0 +1,39 @@
+
+body {
+  margin: 0;
+}
+
+
+.central{
+  background-color: green;
+  margin-left: 0;
+  margin-right: 300px;
+  height: 700px;
+}
+
+.left{
+  height: 300px;
+  width: 300px;
+  background-color:blue;
+  color: #fff;
+  position: fixed;
+  bottom: -270px;
+  left: -240px;
+}
+
+  .pop-up {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+
+  }
+
+  .left:target {
+  	left: 0;
+  	bottom: 0;
+  }
