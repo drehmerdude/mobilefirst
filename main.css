@@ -37,3 +37,81 @@ body {
   	left: 0;
   	bottom: 0;
   }
+
+/* RESOLVI MUDAR TUDO!
+  (╯°□°)╯~ ┻━┻
+
+input[type=radio;]
+
+/* lembrete de usabilidade das pseudo-classes no radio
+  textarea:focus {
+    background: pink;
+  }
+
+  It is best practice to cover all of the "states", particularly for links. An easy way to do that is "LOVE HATE" or
+
+L :link
+O
+V :visited
+E
+
+H :hover
+A :active
+T
+E
+
+Doing them in that order is ideal.
+
+  a:link {
+    color: blue;
+  }
+  a:visited {
+    color: purple;
+  }
+  a:hover {
+    color: green;
+  }
+  a:active {
+    color: red;
+  }
+
+  [data-value] {
+    /* Attribute exists
+  }
+
+  [data-value="foo"] {
+     Attribute has this exact value
+  }
+
+  [data-value*="foo"] {
+    /* Attribute value contains this value somewhere in it
+  }
+
+  [data-value~="foo"] {
+    /* Attribute has this value in a space-separated list somewhere
+  }
+
+  [data-value^="foo"] {
+    /* Attribute value starts with this
+  }
+
+  [data-value=|"foo"] {
+    /* Attribute value has this in a dash-separated list somewhere
+  }
+
+  [data-value$="foo"] {
+    /* Attribute value ends with this
+  }
+
+  div[attribute="value"] {}
+  .module[attribute="value"] {}
+  #header[attribute="value"] {}
+  img[alt~="person"][src*="lorem"] {}
+
+  exemplo: http://jsfiddle.net/paullferguson/Sv54G/3/
+  https://css-tricks.com/almanac/selectors/c/checked/
+  https://css-tricks.com/almanac/selectors/d/default/
+  https://css-tricks.com/almanac/selectors/e/enabled/
+  https://css-tricks.com/almanac/properties/t/transition/
+
+*/
