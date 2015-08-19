@@ -1,0 +1,61 @@
+html, body {
+  margin: 0;
+}
+
+  .mainstyler {
+    margin: 0;
+    height: 2000px;
+    width: 100%;
+    background-color: grey;
+
+  }
+
+  .menu-styler {
+    position: fixed;
+    width: 100%;
+    height: 50vmin;
+    background-color: red;
+    border: 1px solid black;
+    min-height: 0;
+		bottom: -40vmin;
+  }
+
+    .menu-styler:target {
+  		bottom: 0;
+  	}
+
+  .menu-botao {
+    font-size: 8vmin;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .features {
+    display: none;
+  }
+
+  @media only screen and (min-width: 769px) {
+    .menu-styler {
+      width: 40vmax;
+      height: 10vmin;
+      top: 30vmin;
+      left: -16vmax;
+
+    }
+
+      .menu-styler:target{
+        left:0;
+        height: 100vmin;
+        top: 10vmin;
+      }
+
+    .menu-botao {
+      right: 0;
+      text-align: right;
+    }
+  }
+
+  @media only screen and (min-width: 1025px) {
+
+  }

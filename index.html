@@ -10,28 +10,46 @@
 
     <main class="central">hallo</main>
 
-    <div id="other" class="left">
-      <nav>
-        <a href="#menu" class="pop-up">MENU</a>
-        <ul>
-          <li>O Hotel</li>
-          <li>Quartos</li>
-          <li>Localização</li>
-          <li>Contato</li>
-          <li>Sobre</li>
-        </ul>
-      </nav>
-    </div>
-
     <div class="mobileaction-bar">
 
       <div class="tab">
 
-        <input type="radio" id="menupopup" name="menu">
+        <input type="radio" id="menupopup" name="tabgroup">
         <label for="menupopup">MENU</label>
+
         <div class="tab" id="open-tab">
-          <input type="radio" id="tab-open" name="menu">
+
+          <input type="radio" id="tab-open" name="tabgroup">
           <label for="tab-open">MENU</label>
+
+        </div>
+
+        <div class="tab-content">
+
+          <nav>
+            <ul>
+              <li>O Hotel</li>
+              <li>Quartos</li>
+              <li>Localização</li>
+              <li>Contato</li>
+              <li>Sobre</li>
+            </ul>
+          </nav>
+          
+        </div>
+
+      </div>
+
+      <div class="tab">
+
+        <input type="radio" id="reserva-popup" name="tabgroup">
+        <label for="reserva-popup">Reservas</label>
+
+        <div class="tab" id="open-tab">
+
+          <input type="radio" id="tab-open" name="tabgroup">
+          <label for="tab-open">Reservas</label>
+
         </div>
 
         <div class="tab-content">
@@ -49,15 +67,31 @@
       </div>
 
       <div class="tab">
-        <input type="radio" name="reserva" id="reserva-popup">
-        <label for="reserva-popup">Reservas</label>
+
+        <input type="radio" id="contato-popup" name="tabgroup">
+        <label for="contato-popup">(Contato)</label>
+
+        <div class="tab" id="open-tab">
+
+          <input type="radio" id="tab-open" name="tabgroup">
+          <label for="tab-open">(Contato)</label>
+
+        </div>
+
+        <div class="tab-content">
+          <nav>
+            <ul>
+              <li>O Hotel</li>
+              <li>Quartos</li>
+              <li>Localização</li>
+              <li>Contato</li>
+              <li>Sobre</li>
+            </ul>
+          </nav>
+        </div>
+
       </div>
 
-      <div class="tab">
-        <input type="radio" name="contato" id="contato-popup">
-        <label for="contatdo-popup">(Contato)</label>
-
-      </div>
     </div>
 </body>
 </html>
