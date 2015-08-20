@@ -2,7 +2,7 @@ html, body {
   margin: 0;
 }
 
-  .mainstyler {
+  .main-styler {
     margin: 0;
     height: 2000px;
     width: 100%;
@@ -10,22 +10,87 @@ html, body {
 
   }
 
-  .menu-styler {
+  .action-tabs-container {
     position: fixed;
     width: 100%;
-    height: 50vmin;
-    background-color: red;
-    border: 1px solid black;
-    min-height: 0;
-		bottom: -40vmin;
+    height:10vh;
+    background-color: magenta;
+    border: 2px dashed cyan;
+    bottom: 0;
   }
 
-    .menu-styler:target {
-  		bottom: 0;
-  	}
+  .action-styler {
+    float: left;
+    display: inline-block;
+    position: relative;
+    width: calc(98% / 3);
+    border: 1px solid black;
+  }
 
-  .menu-botao {
-    font-size: 8vmin;
+  .action-btn {
+    font-size: 8vw;
+    margin: 5vw 0;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .menu-styler {
+    height: 50vh;
+    background-color: red;
+    border: 1px solid black;
+  }
+
+      .menu-styler:target {
+    		top: -40vh;
+        width: auto;
+    	}
+
+    .menu-btn {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .menu-list-styler {
+      list-style-type: none;
+    }
+
+    .menu-main-list {
+      display: block;
+      box-sizing: border-box;
+      padding: 2vh;
+      background-color: green;
+      font-size: 3vh;
+    }
+
+  .reserve-input-styler {
+    height: 50vh;
+    background-color: yellow;
+    border: 1px solid black;
+  }
+
+    .reserve-input-styler:target {
+      top: -40vh;
+    }
+
+  .reserve-btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .quick-contact-styler {
+    height: 50vh;
+    background-color: green;
+    border: 1px solid black;
+  }
+
+    .quick-contact-styler:target {
+      top: -40vh;
+    }
+
+  .contact-btn {
     display: block;
     text-align: center;
     text-decoration: none;
@@ -35,27 +100,87 @@ html, body {
     display: none;
   }
 
-  @media only screen and (min-width: 769px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media only screen and (min-width: 415px) {
+    /*corrigir para portrait: sempre deixar hotbuttons perto do dedão direito*/
     .menu-styler {
       width: 40vmax;
       height: 10vmin;
       top: 30vmin;
-      left: -16vmax;
-
+      right: -16vmax;
+      text-align: left;
     }
 
       .menu-styler:target{
-        left:0;
+        right: 0;
         height: 100vmin;
         top: 10vmin;
       }
 
-    .menu-botao {
-      right: 0;
-      text-align: right;
+    .menu-btn {
+      left: 0;
+      text-align: left;
+    }
+
+    .menu-list-styler{
+      padding: 0 0 0 24vmax;
     }
   }
 
-  @media only screen and (min-width: 1025px) {
+  @media only screen and (min-width: 769px) {
+    .menu-styler {
+      width: 85%;
+      height: 10vh;
+      top: 0;
+      left: 15vw;
+    }
 
+    .menu-btn {
+      display: none;
+    }
+
+    .menu-list-styler {
+      padding: 0;
+      margin: 2vh;
+    }
+
+    .menu-main-list {
+      display: inline-block;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 2vw;
+      background-color: green;
+      border: 1px solid white;
+      font-size: 3vw;
+
+    }
   }
